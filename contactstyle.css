@@ -1,0 +1,62 @@
+/* Estilos para la página de contacto */
+  .contact-page {
+    padding-top: 60px;
+  }
+
+  .contact-info h1 {
+    font-size: 2.5em;
+    color: #007BFF;
+    margin-bottom: 10px;
+  }
+  
+  .contact-details p {
+    font-size: 1em;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  .contact-form h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .form-group textarea {
+    resize: none;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
