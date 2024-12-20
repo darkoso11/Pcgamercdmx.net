@@ -122,7 +122,117 @@
     color: #ddd;
   }
   
+  /* Nosotros */
+  /* Hero Section */
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+  background: #007BFF;
+  color: white;
+}
 
+.hero h1 {
+  font-size: 2.5em;
+}
+
+.hero p {
+  font-size: 1.2em;
+}
+
+/* Sección de Historia */
+.history {
+  margin: 20px 0;
+}
+
+.elh2 {
+  text-align: center;
+}
+
+.history h2 {
+  color: #333;
+}
+
+.history p {
+  color: #555;
+}
+
+/* Misión, Visión y Valores */
+.mission-vision-values {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+}
+
+.mission-vision-values h2 {
+  text-align: center;
+  color: #007BFF;
+}
+
+.mission-vision-values p {
+  color: #555;
+  font-size: 1.1em;
+  text-align: justify;
+  line-height: 1.6;
+}
+
+/* Equipo */
+.team {
+  text-align: center;
+}
+
+.team-member {
+  display: inline-block;
+  margin: 20px;
+  text-align: center;
+}
+
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+}
+
+.team-member h3 {
+  margin: 10px 0;
+}
+
+/* Logros */
+.achievements ul {
+  list-style: none;
+  padding: 0;
+}
+
+.achievements ul li::before {
+  content: "🏆 ";
+  color: #007BFF;
+}
+
+/* Llamado a la acción */
+.cta {
+  text-align: center;
+  margin: 40px 0;
+  background: #007BFF;
+  color: white;
+  padding: 20px;
+}
+
+.cta .btn {
+  display: inline-block;
+  background: white;
+  color: #007BFF;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.cta .btn:hover {
+  background: #0056b3;
+  color: white;
+}
 
   /* Footer */
 .footer {
