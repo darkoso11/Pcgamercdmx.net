@@ -178,7 +178,85 @@
   box-shadow: 0px 0px 20px #ff00ff, 0px 0px 40px #00ffff;
 }
 
-  
+   /* Catalog Section */
+   .catalog {
+    padding: 40px 20px;
+    text-align: center;
+}
+.catalog h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.catalog .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.catalog .card {
+    background: #1a1a1a;
+    border: 2px solid #00ffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px #00ffff;
+    width: 250px;
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+.catalog .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px #ff00ff, 0px 0px 40px #00ffff;
+}
+.catalog .card img {
+    width: 100%;
+    border-radius: 10px;
+}
+.catalog .card h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+/* Blog Section */
+.blog {
+    padding: 40px 20px;
+    text-align: center;
+}
+.blog h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.blog .posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.blog .post {
+    background: #1a1a1a;
+    border: 2px solid #ff00ff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px #ff00ff;
+    width: 300px;
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+.blog .post:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px #00ffff, 0px 0px 40px #ff00ff;
+}
+.blog .post img {
+    width: 100%;
+    border-radius: 10px;
+}
+.blog .post h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+.blog .post p {
+    font-size: 0.9rem;
+    color: #ccc;
+}
   /* Nosotros */
   /* Hero Section */
 .hero {
