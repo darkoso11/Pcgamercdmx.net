@@ -123,156 +123,154 @@
   }
 
   /* Parte del la pagina principal */
-
-  .cyberpunk-button {
-    background: linear-gradient(90deg, #ff00ff, #00ffff);
-    border: 2px solid #00ffff;
-    color: #fff;
-    padding: 10px 20px;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 16px;
-    text-transform: uppercase;
-    cursor: pointer;
-    box-shadow: 0px 0px 10px #00ffff, 0px 0px 30px #ff00ff;
-    transition: 0.3s ease-in-out;
-}
-.cyberpunk-button:hover {
-    background: linear-gradient(90deg, #00ffff, #ff00ff);
-    box-shadow: 0px 0px 20px #ff00ff, 0px 0px 40px #00ffff;
-}
-
-
-  /* Float four columns side by side */
-.column {
-  float: left;
-  width: 25%;
-  padding: 0 10px;
-}
-
-/* Remove extra left and right margins, due to padding */
-.row {
-  padding-top: 70px;
-  padding-bottom: 20px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Style the counter cards */
-.cyberpunk-card {
-  background: #1a1a1a;
-  border: 2px solid #00ffff;
-  border-radius: 10px;
-  box-shadow: 0px 0px 15px #00ffff;
-  color: #fff;
-  padding: 20px;
-  font-family: 'Orbitron', sans-serif;
-  transition: transform 0.3s ease;
-}
-.cyberpunk-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0px 0px 20px #ff00ff, 0px 0px 40px #00ffff;
-}
-
-   /* Catalog Section */
-   .catalog {
-    padding: 40px 20px;
+  /* Hero Section */
+  #slider {
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom: 20px;
+    width: 1200px;
+    max-width: 100%;
     text-align: center;
-}
-.catalog h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-.catalog .cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-.catalog .card {
-    background: #1a1a1a;
-    border: 2px solid #00ffff;
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px #00ffff;
-    width: 250px;
-    padding: 20px;
-    text-align: left;
-    transition: transform 0.3s ease;
-}
-.catalog .card:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 0px 20px #ff00ff, 0px 0px 40px #00ffff;
-}
-.catalog .card img {
+    position: relative;
+ }
+ 
+ #slider input[type=radio] {
+    display: none;
+ }
+
+ #slider label {
+  cursor: pointer;
+  text-decoration: none;
+ }
+ 
+ #slides {
+    padding: 30px;
+    border: 3px solid #ccc;
+    background: #fff;
+    position: relative;
+    z-index: 1;
+ }
+ 
+ #overflow {
     width: 100%;
-    border-radius: 10px;
-}
-.catalog .card h3 {
-    margin: 10px 0;
-    font-size: 1.2rem;
-}
+    overflow: hidden;
+ }
+ 
+ #slide1:checked ~ #slides .inner {
+    margin-left: 0;
+ }
+ 
+ #slide2:checked ~ #slides .inner {
+    margin-left: -100%;
+ }
+ 
+ #slide3:checked ~ #slides .inner {
+    margin-left: -200%;
+ }
+ 
+ #slides .inner {
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    width: 300%;
+    display: flex;
+    height: 550px;
+ }
+ 
+ #slides .slide {
+    width: 33.33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    flex-direction: column;
+ }
+ 
+ #slides .slide_1 {
+    background: #00171F;
+ }
+ 
+ #slides .slide_2 {
+    background: #003459;
+ }
+ 
+ #slides .slide_3 {
+    background: #007EA7;
+ }
+ 
+ /* Flechas de desplazamiento */
+ #controls {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+ }
+ 
+ #controls label {
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+ }
+ 
+ #controls label:hover {
+    background: rgba(0, 0, 0, 0.8);
+ }
+ 
+ #controls .prev::before,
+ #controls .next::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: solid #fff;
+    border-width: 2px 2px 0 0;
+    transform: rotate(45deg);
+ }
+ 
+ #controls .prev::before {
+    transform: rotate(-135deg);
+ }
+ 
+ #controls .next::before {
+    transform: rotate(45deg);
+ }
+ 
+ /* Bullets */
+ #bullets {
+    margin-top: 20px;
+    text-align: center;
+ }
+ 
+ #bullets label {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+ }
+ 
+ #slide1:checked ~ #bullets label:nth-child(1),
+ #slide2:checked ~ #bullets label:nth-child(2),
+ #slide3:checked ~ #bullets label:nth-child(3) {
+    background: #444;
+ }
+ 
 
 /* Blog Section */
-.blog {
-    padding: 40px 20px;
-    text-align: center;
-}
-.blog h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-.blog .posts {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-.blog .post {
-    background: #1a1a1a;
-    border: 2px solid #ff00ff;
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px #ff00ff;
-    width: 300px;
-    padding: 20px;
-    text-align: left;
-    transition: transform 0.3s ease;
-}
-.blog .post:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 0px 20px #00ffff, 0px 0px 40px #ff00ff;
-}
-.blog .post img {
-    width: 100%;
-    border-radius: 10px;
-}
-.blog .post h3 {
-    margin: 10px 0;
-    font-size: 1.2rem;
-}
-.blog .post p {
-    font-size: 0.9rem;
-    color: #ccc;
-}
+
   /* Nosotros */
-  /* Hero Section */
-.hero {
-  text-align: center;
-  padding: 40px 20px;
-  background: #007BFF;
-  color: white;
-}
 
-.hero h1 {
-  font-size: 2.5em;
-}
-
-.hero p {
-  font-size: 1.2em;
-}
 
 /* Sección de Historia */
 .history {
