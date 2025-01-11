@@ -1,122 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      rel="stylesheet"
-    />
-    <title>Document</title>
-  </head>
-  <body>
-    <!-- inicio del menu -->
-    <div id="menu-container"></div>
-    <!-- Fin del menu -->
 
-    <!-- Hero Section -->
-    <div class="slider">
-      <div class="slide active" style="background-color: #1e1e2f;">
-         <div class="content">
-           <h1>Bienvenido</h1>
-           <p>Descubre lo mejor de nuestro catálogo</p>
-           <button onclick="alert('Explorar Catálogo')">Explorar</button>
-         </div>
-       </div>
-       <div class="slide" style="background: linear-gradient(45deg, #ff7f7f, #ffcc33);">
-         <div class="content">
-           <h1>Ofertas Especiales</h1>
-           <p>No te pierdas nuestros descuentos</p>
-           <button onclick="alert('Ver Ofertas')">Ver Ofertas</button>
-         </div>
-       </div>
-       <div class="slide" style="background-color: #003366;">
-         <div class="content">
-           <h1>Nuevas Llegadas</h1>
-           <p>Explora las últimas novedades</p>
-           <button onclick="alert('Ver Novedades')">Ver Novedades</button>
-         </div>
-       </div>
-   
-       <div class="controls">
-         <button id="prev" onclick="changeSlide(-1)">&#10094;</button>
-         <button id="next" onclick="changeSlide(1)">&#10095;</button>
-       </div>
-      <input type="radio" name="slider" id="slideOne" checked />
-      <input type="radio" name="slider" id="slideTwo" />
-      <input type="radio" name="slider" id="slideThree" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- inicio del menu -->
+  <div id="menu-container"></div>
+  <!-- Fin del menu -->
+
+  <!-- Hero Section -->
+  <div class="slider">
+    <div class="slide active" style="background-color: #1e1e2f;">
+      <div class="content">
+        <h1>Bienvenido</h1>
+        <p>Descubre lo mejor de nuestro catálogo</p>
+        <button onclick="alert('Explorar Catálogo')">Explorar</button>
+      </div>
+    </div>
+    <div class="slide" style="background: linear-gradient(45deg, #ff7f7f, #ffcc33);">
+      <div class="content">
+        <h1>Ofertas Especiales</h1>
+        <p>No te pierdas nuestros descuentos</p>
+        <button onclick="alert('Ver Ofertas')">Ver Ofertas</button>
+      </div>
+    </div>
+    <div class="slide" style="background-color: #003366;">
+      <div class="content">
+        <h1>Nuevas Llegadas</h1>
+        <p>Explora las últimas novedades</p>
+        <button onclick="alert('Ver Novedades')">Ver Novedades</button>
+      </div>
     </div>
 
- <!-- Sección de gamas -->
- <section class="gamas">
-   <h2>Pc Gamers</h2>
-   <p>Para todo tipo de entusiastas por el PC GAMING</p>
-   <div class="gama-cards">
-     <div class="gama-card">Texto 1</div>
-     <div class="gama-card">Texto 2</div>
-     <div class="gama-card">Texto 3</div>
-     <div class="gama-card">Texto 4</div>
-   </div>
- </section>
+    <div class="controls">
+      <button id="prev" onclick="changeSlide(-1)">&#10094;</button>
+      <button id="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+    <input type="radio" name="slider" id="slideOne" checked />
+    <input type="radio" name="slider" id="slideTwo" />
+    <input type="radio" name="slider" id="slideThree" />
+  </div>
 
- <!-- Categorías -->
- <section class="categories">
-   <h2>Categorías</h2>
-   <div class="category-cards">
-     <a href="videojuegos.html" class="category-card">Videojuegos</a>
-     <a href="trabajos.html" class="category-card">Trabajos</a>
-     <a href="contenido.html" class="category-card">Creación de contenido</a>
-     <a href="general.html" class="category-card">General</a>
-   </div>
- </section>
+  <!-- Carrusel de productoa -->
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="card-item">
+          <img src="./img/Tinacos variados.jpg" alt="Tinaco 1">
+          <button class="message-button">Contacto</button>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card-item">
+          <img src="./img/Otro ejemplo.jpg" alt="Tinaco 2">
+          <button class="message-button">Contacto</button>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card-item">
+          <img src="./img/Tinaco 1.jpg" alt="Tinaco 3">
+          <button class="message-button">Contacto</button>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card-item">
+          <img src="./img/Grupo de presentacion.jpg" alt="Tinaco 4">
+          <button class="message-button">Contacto</button>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card-item">
+          <img src="./img/Grupo de presentacion.jpg" alt="Tinaco 5">
+          <button class="message-button">Contacto</button>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card-item">
+          <img src="./img/Grupo de presentacion.jpg" alt="Tinaco 6">
+          <button class="message-button">Contacto</button>
+        </div>
+      </div>
+    </div>
+    <!-- Swiper Pagination -->
+    <div class="swiper-pagination"></div>
 
- <!-- Testimonios -->
- <section class="testimonials">
-   <h2>Testimonios</h2>
-   <div class="testimonial-cards">
-     <div class="testimonial-card">
-       <p>"Excelente PC, cumple con todas mis expectativas."</p>
-       <span>- Floyd Miles</span>
-     </div>
-     <div class="testimonial-card">
-       <p>"El servicio fue rápido y eficiente. ¡Muy recomendado!"</p>
-       <span>- Didier Ramos</span>
-     </div>
-   </div>
- </section>
+    <!-- Swiper Navigation -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
 
- <!-- Blog -->
- <section class="blog">
-   <h2>Blog</h2>
-   <div class="blog-cards">
-     <article class="blog-card">
-       <h3>Cómo construir una marca de clase mundial</h3>
-       <p>Conoce los secretos para destacar...</p>
-     </article>
-   </div>
- </section>
+  <!-- Sección de gamas -->
+  <section class="caracteristicas">
+    <h2>La Pc Gamer ideal para ti</h2>
+    <div class="recuadros">
+      <div class="recuadro">
+        <h3>Calidad Garantizada</h3>
+        <p>Materiales de alta calidad diseñados para durar.</p>
+      </div>
+      <div class="recuadro">
+        <h3>Envío Rápido</h3>
+        <p>Entrega en tiempo récord en todo el país.</p>
+      </div>
+      <div class="recuadro">
+        <h3>Precios Competitivos</h3>
+        <p>Ofrecemos el mejor valor por tu dinero.</p>
+      </div>
+      <div class="recuadro">
+        <h3>Calidad Garantizada</h3>
+        <p>Materiales de alta calidad diseñados para durar.</p>
+      </div>
+    </div>
+  </section>
 
- <!-- Contacto -->
- <section id="contact">
-   <h2>Contacto</h2>
-   <form>
-     <input type="text" name="name" placeholder="Nombre">
-     <input type="text" name="phone" placeholder="Teléfono">
-     <textarea name="message" placeholder="Mensaje"></textarea>
-     <button type="submit">Enviar</button>
-   </form>
- </section>
-</main>
-    <main></main>
-    <!-- inicio del footer -->
-    <div id="footer-container"></div>
-    <!-- fin del footer -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./script.js"></script>
-  </body>
+  <!-- Categorías -->
+
+
+  <!-- productos -->
+  <div id="slidercat-container"></div>
+  <!-- fin de productos -->
+
+  <!-- Testimonios -->
+  <section class="testimonials">
+    <h2>Testimonios</h2>
+    <div class="testimonial-cards">
+      <div class="testimonial-card">
+        <p>"Excelente PC, cumple con todas mis expectativas."</p>
+        <span>- Floyd Miles</span>
+      </div>
+      <div class="testimonial-card">
+        <p>"El servicio fue rápido y eficiente. ¡Muy recomendado!"</p>
+        <span>- Didier Ramos</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog -->
+  <section class="blog">
+    <h2>Blog</h2>
+    <div class="blog-cards">
+      <article class="blog-card">
+        <h3>Cómo construir una marca de clase mundial</h3>
+        <p>Conoce los secretos para destacar...</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contact">
+    <h2>Contacto</h2>
+    <form>
+      <input type="text" name="name" placeholder="Nombre">
+      <input type="text" name="phone" placeholder="Teléfono">
+      <textarea name="message" placeholder="Mensaje"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+  </main>
+  <main></main>
+  <!-- inicio del footer -->
+  <div id="footer-container"></div>
+  <!-- fin del footer -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./script.js"></script>
+  <script src="slideproducts.js"></script>
+</body>
+
 </html>

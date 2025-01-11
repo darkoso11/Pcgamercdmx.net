@@ -200,52 +200,151 @@
   .controls button:hover {
     background: rgba(0, 0, 0, 0.7);
   }
-  
+
+  /* Card de productos */
+  .swiper {
+    width: 100%;
+    height: 75vh; /* Permite que Swiper ajuste dinámicamente su altura */
+    padding: 0 20px; /* Espaciado lateral dentro del slider */
+}
+
+.swiper-wrapper {
+    display: flex;
+}
+
+.swiper-backface-hidden .swiper-slide {
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    width: auto; /* Ajusta el ancho automáticamente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px; /* Espaciado lateral entre slides */
+}
+
+.card-list {
+    display: block; /* Evita conflictos con Swiper */
+}
+
+.card-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card-item {
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #52a5b471;
+    padding: 30px 20px;
+    margin: 30px 10px;
+    border-radius: 10px;
+    box-shadow:  0 10px 10px rgba(0, 0, 0, 0.1);
+    max-width: 90%; /* Las cards no ocuparán más del 80% del ancho del slider */
+    margin: 0 auto; /* Centra las cards dentro de cada slide */
+    min-height: 300px; /* Asegura que todas las cards tengan al menos esta altura */
+}
+
+.card-item img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho de la card */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    max-height: 500px; /* Limita la altura máxima (ajústalo según tu diseño) */
+    border-radius: 15px; /* Mantén las esquinas redondeadas */
+    object-fit: cover; /* Hace que la imagen se recorte para ajustarse al contenedor */
+}
+
+.message-button {
+    font-size: 1.25rem;
+    padding: 10px 35px;
+    color: #191D1E;
+    text-decoration: none;
+    background: #52A5B4;
+    margin: 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: 0.2s ease;
+}
+
+.message-button:hover {
+    background: #64c8da;
+/*     border: 1px solid #191D1E;
+    color: #191D1E;  */
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    z-index: 10;
+}
 /* Blog Section */
 
 /* Gamas */
-.gamas {
+.caracteristicas {
   text-align: center;
-  padding: 2rem;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  height: 100vh;
+  /* padding-top: 150px; */
 }
 
-.gama-cards {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
+.caracteristicas h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #191D1E;
 }
 
-.gama-card {
-  background-color: #1a2546;
-  padding: 1rem;
-  border: 1px solid #ff0090;
-  border-radius: 5px;
-  transition: transform 0.3s ease;
+.recuadros {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Siempre 3 columnas */
+  gap: 10px 20px; /* Espaciado entre columnas y filas */
+  max-width: 900px; /* Limita el ancho del contenedor */
+  margin: 0 auto; /* Centra horizontalmente el contenedor */
+  height: 80%; /* Para centrar verticalmente */
+  align-items: center; /* Centrar verticalmente los elementos dentro de las filas */
+  justify-content: center; /* Centrar horizontalmente los elementos en las columnas */
 }
 
-.gama-card:hover {
-  transform: scale(1.05);
-}
 
-/* Categorías */
-.categories {
-  padding: 2rem;
+.recuadro {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
   text-align: center;
 }
 
-.category-cards {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
+.recuadro h3 {
+  font-size: 1.5rem;
+  color: #191D1E;
+  margin-bottom: 10px;
 }
 
-.category-card {
-  background-color: #282d50;
-  padding: 1rem;
+.recuadro p {
+  color: #555;
+  font-size: 1rem;
+}
+
+/* Efecto hover */
+.recuadro:hover {
+  background-color: #52A5B4;
   color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  border: 1px solid #00d0ff;
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.recuadro:hover h3,
+.recuadro:hover p {
+  color: #fff;
 }
 
   /* Nosotros */

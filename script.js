@@ -38,10 +38,6 @@ function changeSlide(direction) {
 }
 
 
-
-
-
-
 function readMore() {
     alert("Funcionalidad de 'Leer más' aún en desarrollo. ¡Gracias por visitar!");
   }
@@ -60,3 +56,9 @@ function readMore() {
     .then(data => {
       document.getElementById('footer-container').innerHTML = data;
     });
+  //Slide de categorias
+  fetch('slidecategorias.html')
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById('slidercat-container').innerHTML = data;
+  });
