@@ -57,8 +57,8 @@ function readMore() {
       document.getElementById('footer-container').innerHTML = data;
     });
   //Slide de categorias
-  fetch('slidecategorias.html')
+/*   fetch('slidecategorias.html')
   .then(response => response.text())
   .then(data => {
     document.getElementById('slidercat-container').innerHTML = data;
-  });
+  }); */
