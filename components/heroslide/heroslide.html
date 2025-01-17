@@ -1,0 +1,31 @@
+<div class="slider">
+    <div class="slide active" style="background-color: #1e1e2f;">
+      <div class="content">
+        <h1>Bienvenido</h1>
+        <p>Descubre lo mejor de nuestro catálogo</p>
+        <button onclick="alert('Explorar Catálogo')">Explorar</button>
+      </div>
+    </div>
+    <div class="slide" style="background: linear-gradient(45deg, #ff7f7f, #ffcc33);">
+      <div class="content">
+        <h1>Ofertas Especiales</h1>
+        <p>No te pierdas nuestros descuentos</p>
+        <button onclick="alert('Ver Ofertas')">Ver Ofertas</button>
+      </div>
+    </div>
+    <div class="slide" style="background-color: #003366;">
+      <div class="content">
+        <h1>Nuevas Llegadas</h1>
+        <p>Explora las últimas novedades</p>
+        <button onclick="alert('Ver Novedades')">Ver Novedades</button>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button id="prev" onclick="changeSlide(-1)">&#10094;</button>
+      <button id="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+    <input type="radio" name="slider" id="slideOne" checked />
+    <input type="radio" name="slider" id="slideTwo" />
+    <input type="radio" name="slider" id="slideThree" />
+  </div>
