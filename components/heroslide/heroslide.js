@@ -2,7 +2,7 @@ export function initializeHeroSlide() {
   let currentIndex = 0;
   let isTransitioning = false;
 
-  function changeSlide(direction) {
+  window.changeSlide = function(direction) {
     if (isTransitioning) return;
 
     const slides = document.querySelectorAll('.slide');

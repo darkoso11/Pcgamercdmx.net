@@ -1,20 +1,30 @@
 import { loadComponent } from './components/components.js';
-/* import {initializeHero} from './components/heroslide/heroslide.js';
-import { initializeBrands } from './components/marcas/slidebrands.js';
-import { initializeProducts } from './components/carouselProducts/slideproducts.js'; */
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Cargar el componente 'heroslide'
-  loadComponent(
-    'heroslide-container',         // ID del contenedor
-    './components/heroslide/heroslide.html', // Ruta al HTML
-    './components/heroslide/heroslide.css',  // Ruta al CSS
-    () => import('./components/heroslide/heroslide.js') // Inicialización opcional
-  );
+    // Cargar el componente 'heroslide'
+    loadComponent(
+        'heroslide-container',
+        './components/heroslide/heroslide.html',
+        './components/heroslide/heroslide.css',
+        () => import('./components/heroslide/heroslide.js')
+    );
+
+    // Cargar menú y footer
+    fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('menu-container').innerHTML = data;
+        });
+
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-container').innerHTML = data;
+        });
 });
 
-function readMore() {
-  alert("Funcionalidad de 'Leer más' aún en desarrollo. ¡Gracias por visitar!");
+export function readMore() {
+    alert("Funcionalidad de 'Leer más' aún en desarrollo. ¡Gracias por visitar!");
 }
 
 // Inserta el menú
