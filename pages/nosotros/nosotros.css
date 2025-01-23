@@ -1,17 +1,12 @@
 /* Estilos para la página "Nosotros" */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-/* .about-page {
+
+.about-page {
     max-width: 800px;
     padding: 20px;
     background: white;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  } */
+  }
   
   .about-intro, .about-mission, .about-team {
     margin-bottom: 30px;

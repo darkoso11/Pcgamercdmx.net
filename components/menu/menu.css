@@ -1,0 +1,113 @@
+ /* contacto numero */
+ .contacto {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    padding: 10px 20px;
+    background-color: #52A5B4;
+    width: 100%; 
+  }
+    
+  /* Navbar */
+  .navbar {
+    flex-direction: column;
+    background-color: #191D1E;
+  
+    position: fixed;
+    width: 100%; 
+    transform: translateY(0); /* Posición inicial */
+    transition: transform 0.2s ease-out; /* Añadir transición */
+    z-index: 999; 
+    
+  }
+  
+  /* Botón Hamburguesa */
+  .hamburger {
+    display: none; /* Se mostrará solo en dispositivos pequeños */
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  
+  .hamburger span {
+    background-color: #FFFAF6;
+    height: 3px;
+    width: 25px;
+    margin: 4px 0;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+  
+  /* menu */
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #FFCB99;
+  }
+  
+  /* Logo */
+  .logo{
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .logo:hover{
+    transform: scale(1.2);
+  }
+  
+  .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FFFAF6;
+    text-decoration: none;
+  }
+  
+  /* Enlaces de navegación */
+  .nav-links {
+    display: flex;
+    list-style: none;
+    padding-left: 60px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .nav-links.responsive {
+    display: block; /* Mostrar menú desplegado */
+    flex-direction: column;
+    background-color: #ffca99b6;
+    position: absolute;
+    top: 90px; /* Ajustar para evitar solapamiento con la barra */
+    right: 0;
+    width: 100%;
+    padding: 10px 0;
+  }
+  
+  .nav-links li {
+    text-align: center;
+    margin: 10px 0;
+    padding-inline: 5px;
+    
+  }
+  
+  .nav-links a {
+    color: #726f6b;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  .nav-links a:hover {
+    color: #474444;
+  }
+  
+  /* Redes sociales */
+  .social-media a {
+    margin-left: 15px;
+    color: #726f6b;
+    text-decoration: none;
+    font-size: 1.8rem;
+  }
+  
+  .social-media a:hover {
+    color: #ddd;
+  }

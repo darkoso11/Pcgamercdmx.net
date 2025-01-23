@@ -1,6 +1,13 @@
 import { loadComponent } from './components/components.js';
 
 document.addEventListener('DOMContentLoaded', () => {
+    loadComponent(
+        'menu-container',
+        './components/menu/menu.html',
+        './components/menu/menu.css',
+        () => import('./components/menu/menu.js')
+      );
+
     // Cargar el componente 'heroslide'
     loadComponent(
         'heroslide-container',
@@ -10,18 +17,11 @@ document.addEventListener('DOMContentLoaded', () => {
     );
 
     loadComponent(
-      'carruselproducts-container',
-      './components/carruselproducts/carruselproducts.html',
-      './components/carruselproducts/carruselproducts.css',
-      () => import('./components/carruselproducts/carruselproducts.js')
-    );
-
-    // Cargar menú y footer
-    fetch('menu.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('menu-container').innerHTML = data;
-        });
+        'carruselproducts-container',
+        './components/carruselproducts/carruselproducts.html',
+        './components/carruselproducts/carruselproducts.css',
+        () => import('./components/carruselproducts/carruselproducts.js')
+      );
 
     fetch('footer.html')
         .then(response => response.text())
