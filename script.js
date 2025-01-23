@@ -9,6 +9,13 @@ document.addEventListener('DOMContentLoaded', () => {
         () => import('./components/heroslide/heroslide.js')
     );
 
+    loadComponent(
+      'carruselproducts-container',
+      './components/carruselproducts/carruselproducts.html',
+      './components/carruselproducts/carruselproducts.css',
+      () => import('./components/carruselproducts/carruselproducts.js')
+    );
+
     // Cargar menú y footer
     fetch('menu.html')
         .then(response => response.text())
@@ -26,33 +33,5 @@ document.addEventListener('DOMContentLoaded', () => {
 export function readMore() {
     alert("Funcionalidad de 'Leer más' aún en desarrollo. ¡Gracias por visitar!");
 }
-
-// Inserta el menú
-fetch('menu.html')
-  .then(response => response.text())
-  .then(data => {
-    document.getElementById('menu-container').innerHTML = data;
-  });
-
-// footer
-fetch('footer.html')
-  .then(response => response.text())
-  .then(data => {
-    document.getElementById('footer-container').innerHTML = data;
-  });
-//Slide de categorias
-/* fetch('slidecategorias.html')
-  .then(response => response.text())
-  .then(data => {
-    document.getElementById('slidercat-container').innerHTML = data;
-  }); */
-
-  /* Slide de marcas */
-/*   fetch('slidecategorias.html')
-  .then(response => response.text())
-  .then(data => {
-    document.getElementById('slidercat-container').innerHTML = data;
-  });
- */
 
   
