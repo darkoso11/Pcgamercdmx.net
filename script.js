@@ -23,6 +23,20 @@ document.addEventListener('DOMContentLoaded', () => {
         () => import('./components/carruselproducts/carruselproducts.js')
       );
 
+      loadComponent(
+        'slidecategorias-container',
+        './components/slidcategorias/slidecategorias.html',
+        './components/slidcategorias/slidecategorias.css',
+        () => import('./components/slidcategorias/slidecategorias.js')
+      );
+
+      loadComponent(
+        'brands-container',
+        './components/marcas/slidebrands.html',
+        './components/marcas/slidebrands.css',
+        () => import('./components/marcas/slidebrands.js')
+      );
+
     fetch('footer.html')
         .then(response => response.text())
         .then(data => {

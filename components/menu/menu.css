@@ -1,24 +1,23 @@
  /* contacto numero */
- .contacto {
+/*  .contacto {
     display: flex;
     justify-content: center;
     align-items: baseline;
     padding: 10px 20px;
     background-color: #52A5B4;
     width: 100%; 
-  }
+  } */
     
   /* Navbar */
   .navbar {
+    display: flex !important;
+    justify-content: center !important;
     flex-direction: column;
-    background-color: #191D1E;
-  
-    position: fixed;
+    /* position: fixed; */
     width: 100%; 
     transform: translateY(0); /* Posición inicial */
     transition: transform 0.2s ease-out; /* Añadir transición */
     z-index: 999; 
-    
   }
   
   /* Botón Hamburguesa */
@@ -44,7 +43,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #FFCB99;
+    background-color: #ffffff9a;
+    width: 95%;
   }
   
   /* Logo */

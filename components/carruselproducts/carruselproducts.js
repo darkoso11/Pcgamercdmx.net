@@ -19,11 +19,11 @@ export function initializeHeroSlide() {
             prevEl: '.swiper-button-prev',
         },
         breakpoints: {
-            320: {
-                slidesPerView: 1,
+            600: {
+                slidesPerView: 2,
             },
             860: {
-                slidesPerView: 2,
+                slidesPerView: 3,
             },
             1224: {
                 slidesPerView: 4,
