@@ -10,15 +10,29 @@
     
   /* Navbar */
   .navbar {
-    display: flex !important;
-    justify-content: center !important;
+    margin: auto; /* Centra horizontalmente */
     flex-direction: column;
-    /* position: fixed; */
-    width: 100%; 
-    transform: translateY(0); /* Posición inicial */
-    transition: transform 0.2s ease-out; /* Añadir transición */
-    z-index: 999; 
-  }
+    position: fixed;
+    width: 100%;
+    transform: translateY(0);
+    transition: transform 0.2s ease-out;
+    z-index: 999;
+}
+
+/* seccion del menu */
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ffffff9a;
+  width: 95%; /* Usa el 95% del ancho */
+  max-width: 1200px; /* Límite opcional para que no sea demasiado ancho */
+  margin: 0 auto; /* Centra el menú dentro del navbar */
+  border-radius: 10px; /* Opcional, añade esquinas redondeadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra opcional */
+}
+
   
   /* Botón Hamburguesa */
   .hamburger {
@@ -37,15 +51,6 @@
     transition: all 0.3s ease;
   }
   
-  /* menu */
-  .menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #ffffff9a;
-    width: 95%;
-  }
   
   /* Logo */
   .logo{
@@ -68,9 +73,8 @@
   .nav-links {
     display: flex;
     list-style: none;
-    padding-left: 60px;
-    transition: all 0.3s ease-in-out;
-  }
+    padding-left: 0; /* Elimina el espacio adicional */
+}
   
   .nav-links.responsive {
     display: block; /* Mostrar menú desplegado */
@@ -94,6 +98,7 @@
     color: #726f6b;
     text-decoration: none;
     font-size: 1.2rem;
+    padding: 0 15px;
   }
   
   .nav-links a:hover {
