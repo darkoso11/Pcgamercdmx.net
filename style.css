@@ -2,17 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
   }
   
   body {
     font-family: Arial, sans-serif;
   }
 
-
   /* Parte del la pagina principal */
   
- 
-/* Blog Section */
 
 /* Gamas */
 .caracteristicas {
@@ -39,7 +37,6 @@
   align-items: center; /* Centrar verticalmente los elementos dentro de las filas */
   justify-content: center; /* Centrar horizontalmente los elementos en las columnas */
 }
-
 
 .recuadro {
   background-color: #fff;
@@ -73,6 +70,92 @@
 .recuadro:hover h3,
 .recuadro:hover p {
   color: #fff;
+}
+
+/* comentarios de google */
+.review {
+  border: 1px solid #ddd;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+.review-author {
+  font-weight: bold;
+}
+.review-rating {
+  color: #ffa500;
+}
+
+/* Seccion de contecto del home */
+.contactar {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+h2 {
+  text-align: center;
+  color: #00ffff;
+}
+form {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+form input, form select, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #333;
+  color: #fff;
+}
+form button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #00ffff;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+}
+form button:hover {
+  background-color: #00cccc;
+}
+.contact-info {
+  margin-top: 20px;
+}
+.contact-info a {
+  display: inline-block;
+  margin: 10px 0;
+  padding: 10px;
+  text-decoration: none;
+  color: #000;
+  background-color: #00ffff;
+  border-radius: 4px;
+  text-align: center;
+}
+.contact-info a:hover {
+  background-color: #00cccc;
+}
+.map {
+  margin-top: 20px;
+  border: 2px solid #00ffff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.hours {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #222;
+  border-radius: 8px;
 }
 
   /* Nosotros */

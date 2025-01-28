@@ -3,6 +3,7 @@
     width: 1300px !important;
     height: 75vh; /* Permite que Swiper ajuste dinámicamente su altura */
     padding: 0 20px; /* Espaciado lateral dentro del slider */
+    background-color: #080F19 !important;
 }
 
 .swiper-wrapper {

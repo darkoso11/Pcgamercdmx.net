@@ -50,22 +50,10 @@
   <div id="brands-container"></div>
   
   <!-- Testimonios -->
-  <section class="testimonials">
-    <h2>Testimonios</h2>
-    <div class="testimonial-cards">
-      <div class="testimonial-card">
-        <p>"Excelente PC, cumple con todas mis expectativas."</p>
-        <span>- Floyd Miles</span>
-      </div>
-      <div class="testimonial-card">
-        <p>"El servicio fue rápido y eficiente. ¡Muy recomendado!"</p>
-        <span>- Didier Ramos</span>
-      </div>
-    </div>
-  </section>
+  <div id="reviews-container"></div>
 
   <!-- Blog -->
-  <section class="blog">
+<!--   <section class="blog">
     <h2>Blog</h2>
     <div class="blog-cards">
       <article class="blog-card">
@@ -74,16 +62,71 @@
       </article>
     </div>
   </section>
-
+ -->
   <!-- Contacto -->
-  <section id="contact">
-    <h2>Contacto</h2>
-    <form>
-      <input type="text" name="name" placeholder="Nombre">
-      <input type="text" name="phone" placeholder="Teléfono">
-      <textarea name="message" placeholder="Mensaje"></textarea>
-      <button type="submit">Enviar</button>
-    </form>
+  <section class="contactar">
+    <h2>Contáctanos</h2>
+
+    <div class="grid">
+      <!-- Formulario -->
+      <form>
+        <label for="name">Nombre</label>
+        <input type="text" id="name" name="name" placeholder="Tu nombre">
+
+        <label for="category">Categoría</label>
+        <select id="category" name="category">
+          <option value="">Selecciona una categoría</option>
+          <option value="pc-gamer">PC Gamer</option>
+          <option value="diseno-grafico">PC para Diseño Gráfico</option>
+          <option value="3d">PC para 3D</option>
+          <option value="estudiantes">Computadoras para Estudiantes</option>
+          <option value="investigacion">Investigación y Procesamiento de Datos</option>
+          <option value="arquitectura">Computadoras para Arquitectura</option>
+          <option value="ia">PC para Inteligencia Artificial</option>
+        </select>
+
+        <label for="description">Descripción</label>
+        <textarea id="description" name="description" rows="4" placeholder="Describe tus necesidades"></textarea>
+
+        <label for="budget">Presupuesto Estimado</label>
+        <input type="number" id="budget" name="budget" placeholder="$">
+
+        <label for="whatsapp">WhatsApp</label>
+        <input type="tel" id="whatsapp" name="whatsapp" placeholder="Tu número de WhatsApp">
+
+        <label for="email">Correo Electrónico</label>
+        <input type="email" id="email" name="email" placeholder="Tu correo electrónico">
+
+        <button type="submit">Enviar</button>
+      </form>
+
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <a href="https://wa.me/YOUR_PHONE_NUMBER" target="_blank">WhatsApp</a>
+        <a href="tel:YOUR_PHONE_NUMBER">Llamar</a>
+        <a href="mailto:YOUR_EMAIL">Enviar Correo</a>
+      </div>
+
+      <!-- Google Map -->
+      <div class="map">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345086164!2d144.9537353153169!3d-37.816279742021116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0x5045675218ce6e0!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2sus!4v1634559928181!5m2!1sen!2sus" 
+          width="100%" 
+          height="250" 
+          style="border:0;"
+          allowfullscreen="" 
+          loading="lazy">
+        </iframe>
+      </div>
+
+      <!-- Business Info -->
+      <div class="hours">
+        <h3>Horarios</h3>
+        <p>Lunes a Viernes: 9:00 AM - 6:00 PM</p>
+        <p>Sábados: 10:00 AM - 2:00 PM</p>
+        <p>Domingos: Cerrado</p>
+      </div>
+    </div>
   </section>
   </main>
   <!-- inicio del footer -->

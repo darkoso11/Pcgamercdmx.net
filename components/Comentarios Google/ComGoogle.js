@@ -1,4 +1,4 @@
-const API_KEY = 'TU_API_KEY_DE_GOOGLE';
+/* const API_KEY = 'TU_API_KEY_DE_GOOGLE';
 const PLACE_ID = 'ID_DEL_LUGAR';
 
 async function fetchGoogleReviews() {
@@ -24,4 +24,4 @@ async function fetchGoogleReviews() {
     }
 }
 
-fetchGoogleReviews();
+fetchGoogleReviews(); */
