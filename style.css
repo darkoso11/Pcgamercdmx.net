@@ -10,7 +10,12 @@
   }
 
   /* Parte del la pagina principal */
-  
+
+  /* cassusel de productos */
+  #carruselproducts-container {
+    background-color: #080F19;
+  }
+
 
 /* Gamas */
 .caracteristicas {
@@ -18,6 +23,7 @@
   padding: 50px 20px;
   background-color: #f9f9f9;
   height: 100vh;
+  background-color: #060A33;
   /* padding-top: 150px; */
 }
 

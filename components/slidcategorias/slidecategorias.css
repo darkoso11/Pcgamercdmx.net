@@ -3,6 +3,7 @@
     margin: 0 auto;
     overflow: hidden;
     position: relative;
+    height: 50%;
 }
 .carousel {
     display: flex;
