@@ -1,5 +1,3 @@
-// components.js
-// components.js
 export async function loadGlobalComponents() {
     // Array de componentes globales
     const globalComponents = [
