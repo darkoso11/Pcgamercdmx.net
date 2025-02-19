@@ -1,3 +1,4 @@
+// components.js
 export async function loadComponent(containerId, htmlPath, cssPath, initCallback) {
     try {
         // Cargar el HTML
@@ -25,9 +26,9 @@ export async function loadComponent(containerId, htmlPath, cssPath, initCallback
                     module.initializeHeroSlide();
                 }
             }
-        } else {
-            console.error(Container with id ${containerId} not found);
-        }
+        }/*  else {
+            console.error(container with id ${containerId} not found);
+        } */
     } catch (error) {
         console.error('Error loading component:', error);
     }

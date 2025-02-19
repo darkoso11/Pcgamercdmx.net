@@ -31,5 +31,5 @@ export function initializeHeroSlide() {
         },
     });
 
-    console.log('Swiper inicializado:', swiper);
+    /* console.log('Swiper inicializado:', swiper); */
 }
