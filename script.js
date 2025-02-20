@@ -37,13 +37,14 @@ document.addEventListener('DOMContentLoaded', () => {
         () => import('./components/marcas/slidebrands.js')
       );
 
-    });
+      loadComponent(
+        'footer-container',
+        '../../components/footer/footer.html',
+        '../../components/footer/footer.css',
+        () => import('../../components/footer/footer.js')
+      )
 
-    fetch('footer.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('footer-container').innerHTML = data;
-        });
+    });
 
 export function readMore() {
     alert("Funcionalidad de 'Leer más' aún en desarrollo. ¡Gracias por visitar!");

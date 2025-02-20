@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+    background-color: #020A15;
+    color: #0ff;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+main {
+    padding-top: 80px;
+}
+
+.cyberpunk-title {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 15px #0ff;
+    animation: glitch 1.5s infinite alternate;
+}
+
+@keyframes glitch {
+    0% { text-shadow: 2px 2px 5px #0ff, -2px -2px 5px #ff00ff; }
+    100% { text-shadow: -2px -2px 5px #0ff, 2px 2px 5px #ff00ff; }
+}
+
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.service {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid #0ff;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #0ff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ff00ff;
+}
+
+.cyberpunk-footer {
+    margin-top: 20px;
+    padding: 10px;
+    background: linear-gradient(90deg, #0ff, #ff00ff);
+    color: black;
+    font-weight: bold;
+}
