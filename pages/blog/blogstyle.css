@@ -8,9 +8,12 @@ body {
     color: #333;
   }
   
+  main {
+    padding-top: 80px;
+  }
+
   .blog-content {
     max-width: 800px;
-    margin-top: 80px !important;
     margin: 20px auto;
     padding: 10px;
     background: white;

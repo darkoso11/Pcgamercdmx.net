@@ -1,20 +1,21 @@
 export function initializeHeroSlide() {
     const categories = [
-        { name: "Electrónica", image: "/api/placeholder/200/200", link: "#electronica" },
-        { name: "Ropa", image: "/api/placeholder/200/200", link: "#ropa" },
-        { name: "Hogar", image: "/api/placeholder/200/200", link: "#hogar" },
-        { name: "Deportes", image: "/api/placeholder/200/200", link: "#deportes" },
-        { name: "Libros", image: "/api/placeholder/200/200", link: "#libros" },
-        { name: "Muebles", image: "/api/placeholder/200/200", link: "#muebles" },
-        { name: "Cocina", image: "/api/placeholder/200/200", link: "#cocina" },
-        { name: "Jardín", image: "/api/placeholder/200/200", link: "#jardin" },
-        { name: "Tecnología", image: "/api/placeholder/200/200", link: "#tecnologia" },
-        { name: "Belleza", image: "/api/placeholder/200/200", link: "#belleza" },
-        { name: "Infantil", image: "/api/placeholder/200/200", link: "#infantil" },
-        { name: "Música", image: "/api/placeholder/200/200", link: "#musica" },
-        { name: "Automotriz", image: "/api/placeholder/200/200", link: "#automotriz" },
-        { name: "Oficina", image: "/api/placeholder/200/200", link: "#oficina" },
-        { name: "Viajes", image: "/api/placeholder/200/200", link: "#viajes" }
+        { name: "PC gamer gama alta", image: "../../Img/pcgamercdmx.net/MHBJKJVCGVHBJNK.png", link: "#" },
+        { name: "PC gamer gama media", image: "../../Img/pcgamercdmx.net/MHBJKJVCGVHBJNK.png", link: "#" },
+        { name: "PC gamer gama baja", image: "../../Img/pcgamercdmx.net/MHBJKJVCGVHBJNK.png", link: "#" },
+        { name: "Pc gamer gama super alta", image: "../../Img/pcgamercdmx.net/MHBJKJVCGVHBJNK.png", link: "#" },
+        { name: "Pc para Inteligencia Artificial", image: "../../Img/pcgamercdmx.net/MHBJKJVCGVHBJNK.png", link: "#" },
+        { name: "PC Gamer para jugar GTA VI", image: "../../Img/pcgamercdmx.net/MHBJKJVCGVHBJNK.png", link: "#" },
+        { name: "PC Gamer para Fortnite", image: "../../Img/pcgamercdmx.net/MHBJKJVCGVHBJNK.png", link: "#" },
+        { name: "PC Gamer para Jugar OverWatch 2", image: "../../Img/pcgamercdmx.net/MHBJKJVCGVHBJNK.png", link: "#" },
+        { name: "Computadoras para Edición de Video", image: "../../Img/pcgamercdmx.net/MHBJKJVCGVHBJNK.png", link: "#" },
+        { name: "Computadora para Edición de Fotografía", image: "../../Img/pcgamercdmx.net/MHBJKJVCGVHBJNK.png", link: "#" },
+        { name: "Workstation para Modelado y Diseño 3D", image: "../../Img/pcgamercdmx.net/MHBJKJVCGVHBJNK.png", link: "#" },
+        { name: "Computadoras para Diseño gráfico", image: "../../Img/pcgamercdmx.net/MHBJKJVCGVHBJNK.png", link: "#" },
+        { name: "Computadoras para Programación", image: "../../Img/pcgamercdmx.net/MHBJKJVCGVHBJNK.png", link: "#" },
+        { name: "PC GAMER", image: "../../Img/pcgamercdmx.net/MHBJKJVCGVHBJNK.png", link: "#" },
+        { name: "PC Gamer para Streaming", image: "../../Img/pcgamercdmx.net/MHBJKJVCGVHBJNK.png", link: "#" },
+        { name: "PC Gamer para Jugar Call of Duty Black Ops 6", image: "../../Img/pcgamercdmx.net/MHBJKJVCGVHBJNK.png", link: "#" },
     ];
 
     const carousel = document.getElementById('categoryCarousel');
