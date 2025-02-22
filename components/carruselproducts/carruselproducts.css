@@ -35,13 +35,13 @@
 }
 
 .card-item {
-    max-width: 80%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #b5c3c571;
+    background-color: #14b39d;
+    /* border: 1px solid #F72585; */
     padding: 30px 20px;
     margin: 30px 10px;
     border-radius: 10px;
@@ -49,6 +49,8 @@
     max-width: 90%; /* Las cards no ocuparán más del 80% del ancho del slider */
     margin: 0 auto; /* Centra las cards dentro de cada slide */
     min-height: 300px; /* Asegura que todas las cards tengan al menos esta altura */
+    clip-path: polygon(0% 0%, 90% 0%, 100% 15%, 100% 100%, 15% 100%, 0% 85%);
+    box-shadow: 0px 0px 10px rgba(20, 179, 157, 0.7);
 }
 
 .card-item img {
