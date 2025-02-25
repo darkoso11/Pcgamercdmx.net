@@ -5,6 +5,7 @@ export function initializeHeroSlide() {
         { name: "PC gamer gama baja", image: "../../Img/pcgamercdmx.net/MHBJKJVCGVHBJNK.png", link: "#" },
         { name: "Pc gamer gama super alta", image: "../../Img/pcgamercdmx.net/MHBJKJVCGVHBJNK.png", link: "#" },
         { name: "Pc para Inteligencia Artificial", image: "../../Img/pcgamercdmx.net/MHBJKJVCGVHBJNK.png", link: "#" },
+        { name: "PC Gamer para Jugar Call of Duty Black Ops 6", image: "../../Img/pcgamercdmx.net/MHBJKJVCGVHBJNK.png", link: "#" },
         { name: "PC Gamer para jugar GTA VI", image: "../../Img/pcgamercdmx.net/MHBJKJVCGVHBJNK.png", link: "#" },
         { name: "PC Gamer para Fortnite", image: "../../Img/pcgamercdmx.net/MHBJKJVCGVHBJNK.png", link: "#" },
         { name: "PC Gamer para Jugar OverWatch 2", image: "../../Img/pcgamercdmx.net/MHBJKJVCGVHBJNK.png", link: "#" },
@@ -15,7 +16,6 @@ export function initializeHeroSlide() {
         { name: "Computadoras para Programación", image: "../../Img/pcgamercdmx.net/MHBJKJVCGVHBJNK.png", link: "#" },
         { name: "PC GAMER", image: "../../Img/pcgamercdmx.net/MHBJKJVCGVHBJNK.png", link: "#" },
         { name: "PC Gamer para Streaming", image: "../../Img/pcgamercdmx.net/MHBJKJVCGVHBJNK.png", link: "#" },
-        { name: "PC Gamer para Jugar Call of Duty Black Ops 6", image: "../../Img/pcgamercdmx.net/MHBJKJVCGVHBJNK.png", link: "#" },
     ];
 
     const carousel = document.getElementById('categoryCarousel');
@@ -53,7 +53,7 @@ export function initializeHeroSlide() {
 
     function moveToSlide(slideIndex) {
         currentSlide = slideIndex;
-        carousel.style.transform = `translateX(-${currentSlide * 270}px)`;
+        carousel.style.transform = `translateX(-${currentSlide * 285}px)`;
         
         const dots = document.querySelectorAll('.pagination-dot');
         dots.forEach((dot, index) => {
