@@ -45,7 +45,6 @@
     font-family: 'Orbitron', sans-serif;
     font-size: 16px;
     font-weight: bold;
-    
     color: #72BF6F;
     background-color: #3e37c9;
 /*     border: 2px solid #3F37C9; */
@@ -55,16 +54,60 @@
     max-width: 100%; /* Las cards no ocuparán más del 80% del ancho del slider */
     /* margin: 0 auto; */ /* Centra las cards dentro de cada slide */
     min-height: 300px; /* Asegura que todas las cards tengan al menos esta altura */
-    clip-path: polygon(0% 0%, 75% 0%, 85% 10%, 100% 10%, 100% 100%, 0% 100%, 0% 85%, 0% 15%);
+    clip-path: polygon(0% 0%, 85% 0%, 90% 5%, 100% 5%, 100% 100%, 0% 100%, 0% 95%, 0% 5%);
 }
 
+/* Seccion de las espesificaciones */
+.specs div {
+    display: flex;
+    /* align-items: center; */
+    gap: 5px;
+}
+
+.name, .price {
+    text-align: center;
+    width: 100%;
+}
+
+.price {
+    margin-bottom: 5px;
+}
+
+.specs {
+    width: 100%;
+    text-align: left;
+}
+.spec-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px; 
+    width: 100%;
+}
+
+.spec-title {
+    font-weight: bold;
+    font-size: 18px;
+    color: #89BDF6;
+    
+}
+
+.spec-value {
+    font-size: 15px;
+}
+
+/* Actualización para .peace */
 .peace {
-    padding-bottom: 10px;
+    display: flex;
+    align-items: flex-start !important; /* Cambiado de center a flex-start */
+    padding-bottom: 15px;
+    width: 100%;
+    justify-content: flex-start;
 }
 
 .bi {
     font-size: 30px;
     color: #89BDF6;
+    margin-top: 3px;
 }
 
 
@@ -74,34 +117,6 @@
     max-height: 500px; /* Limita la altura máxima (ajústalo según tu diseño) */
     border-radius: 15px; /* Mantén las esquinas redondeadas */
     object-fit: cover; /* Hace que la imagen se recorte para ajustarse al contenedor */
-}
-
-.amd {
-    position: absolute;
-    top: 60px;
-    right: 5px;
-    width: 35%;
-}
-
-.intel {
-    position: absolute;
-    top: 120px;
-    right: 17px;
-    width: 20%;
-}
-
-.nvidia {
-    position: absolute;
-    top: 70px;
-    right: 0px;
-    width: 30%;
-}
-
-.ocelot {
-    position: absolute;
-    top: 125px;
-    right: 30px;
-    width: 20%;
 }
 
 .offer {
@@ -118,14 +133,58 @@
 
 .price {
     font-size: 22px;
-    color: yellow;
+    color:rgb(229, 255, 0);
 }
 
-.specs div {
-    display: flex;
-    align-items: center;
-    gap: 5px;
+.watts{
+    position: absolute;
+    top: 190px;
+    left: 10px;
+    background: #89BDF6;
+    color: white;
+    padding: 5px;
+    font-size: 14px;
+    width: fit-content;
+    border-radius: 3px;
 }
+
+.certificate {
+    position: absolute;
+    top: 240px;
+    left: 10px;
+    width: 13%;
+    height: auto;
+}
+
+.amd {
+    position: absolute;
+    top: 60px;
+    right: 5px;
+    width: 30%;
+}
+
+.intel {
+    position: absolute;
+    top: 120px;
+    right: 17px;
+    width: 10%;
+}
+
+.nvidia {
+    position: absolute;
+    top: 70px;
+    right: 0px;
+    width: 20%;
+}
+
+.ocelot {
+    position: absolute;
+    top: 125px;
+    right: 30px;
+    width: 15%;
+}
+
+
 
 .specs div img {
     width: 20px;
