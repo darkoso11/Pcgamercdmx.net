@@ -45,7 +45,8 @@
     font-family: 'Orbitron', sans-serif;
     font-size: 16px;
     font-weight: bold;
-    color: #89BDF6;
+    
+    color: #72BF6F;
     background-color: #3e37c9;
 /*     border: 2px solid #3F37C9; */
     padding: 10px 10px;
@@ -54,16 +55,18 @@
     max-width: 100%; /* Las cards no ocuparán más del 80% del ancho del slider */
     /* margin: 0 auto; */ /* Centra las cards dentro de cada slide */
     min-height: 300px; /* Asegura que todas las cards tengan al menos esta altura */
-    clip-path: polygon(0% 0%, 75% 0%, 85% 10%, 100% 10%, 100% 100%, 15% 100%, 0% 85%, 0% 15%);
+    clip-path: polygon(0% 0%, 75% 0%, 85% 10%, 100% 10%, 100% 100%, 0% 100%, 0% 85%, 0% 15%);
+}
+
+.peace {
+    padding-bottom: 10px;
 }
 
 .bi {
     font-size: 30px;
-    color: aliceblue;
+    color: #89BDF6;
 }
-.icono {
-    width: 80px;
-}
+
 
 .card-item img {
     width: 100%; /* Asegura que la imagen ocupe todo el ancho de la card */
@@ -82,8 +85,8 @@
 
 .intel {
     position: absolute;
-    top: 115px;
-    right: 15px;
+    top: 120px;
+    right: 17px;
     width: 20%;
 }
 
@@ -96,8 +99,8 @@
 
 .ocelot {
     position: absolute;
-    top: 120px;
-    right: 25px;
+    top: 125px;
+    right: 30px;
     width: 20%;
 }
 
