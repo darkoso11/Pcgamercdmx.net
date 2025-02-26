@@ -46,16 +46,16 @@
     font-size: 16px;
     font-weight: bold;
     color: #72BF6F;
-    background-color: #3e37c9;
-/*     border: 2px solid #3F37C9; */
+    background-color: #3e37c9c7;
     padding: 10px 10px;
     margin: 30px 0px !important;
     box-shadow:  0 10px 10px rgba(0, 0, 0, 0.1);
     max-width: 100%; /* Las cards no ocuparán más del 80% del ancho del slider */
     /* margin: 0 auto; */ /* Centra las cards dentro de cada slide */
-    min-height: 300px; /* Asegura que todas las cards tengan al menos esta altura */
-    clip-path: polygon(0% 0%, 85% 0%, 90% 5%, 100% 5%, 100% 100%, 0% 100%, 0% 95%, 0% 5%);
+    min-height: 300px; 
+    clip-path: polygon(0% 0%, 88% 0%, 92% 6%, 100% 6%, 100% 100%, 10% 100%, 0% 94%, 0% 6%);
 }
+
 
 /* Seccion de las espesificaciones */
 .specs div {
@@ -131,14 +131,10 @@
     border-radius: 3px;
 }
 
-.price {
-    font-size: 22px;
-    color:rgb(229, 255, 0);
-}
 
 .watts{
     position: absolute;
-    top: 190px;
+    top: 240px;
     left: 10px;
     background: #89BDF6;
     color: white;
@@ -150,41 +146,45 @@
 
 .certificate {
     position: absolute;
-    top: 240px;
+    top: 180px;
     left: 10px;
     width: 13%;
     height: auto;
 }
 
+.nvidia {
+    position: absolute;
+    top: 65px;
+    right: 5px;
+    width: 22%;
+}
+
 .amd {
     position: absolute;
-    top: 60px;
-    right: 5px;
+    top: 110px;
+    right: -13px;
     width: 30%;
 }
 
-.intel {
+.procesadores {
     position: absolute;
-    top: 120px;
-    right: 17px;
-    width: 10%;
+    top: 100px;
+    right: 5px;
+    width: 22%;
 }
 
-.nvidia {
-    position: absolute;
-    top: 70px;
-    right: 0px;
-    width: 20%;
-}
 
-.ocelot {
+.case {
     position: absolute;
-    top: 125px;
-    right: 30px;
+    top: 140px;
+    right: 10px;
     width: 15%;
 }
 
-
+.price {
+    font-size: 22px;
+    color:rgb(229, 255, 0);
+}
 
 .specs div img {
     width: 20px;
