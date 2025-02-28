@@ -1,118 +1,193 @@
- /* contacto numero */
-/*  .contacto {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    padding: 10px 20px;
-    background-color: #52A5B4;
-    width: 100%; 
-  } */
-    
-  /* Navbar */
-  .navbar {
-    margin: auto; /* Centra horizontalmente */
-    flex-direction: column;
-    position: fixed;
-    width: 100%;
-    transform: translateY(0);
-    transition: transform 0.2s ease-out;
-    z-index: 999;
-}
-
-/* seccion del menu */
-.menu {
+/* Navbar */
+ /* Navbar principal */
+ .navbar {
+  position: fixed;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  padding: 10px 20px;
-  background-color: #ffffff9a;
-  width: 95%; /* Usa el 95% del ancho */
-  max-width: 1200px; /* Límite opcional para que no sea demasiado ancho */
-  margin: 0 auto; /* Centra el menú dentro del navbar */
-  border-radius: 10px; /* Opcional, añade esquinas redondeadas */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra opcional */
+  justify-content: center;
+  z-index: 9;
+  top: 0;
+  left: 0;
 }
 
-  
-  /* Botón Hamburguesa */
-  .hamburger {
-    display: none; /* Se mostrará solo en dispositivos pequeños */
-    flex-direction: column;
-    cursor: pointer;
-    margin-right: 20px;
-  }
-  
-  .hamburger span {
-    background-color: #FFFAF6;
-    height: 3px;
-    width: 25px;
-    margin: 4px 0;
-    border-radius: 2px;
-    transition: all 0.3s ease;
-  }
-  
-  
-  /* Logo */
-  .logo{
-    cursor: pointer;
-    transition: all 0.3s;
-  }
-  
-  .logo:hover{
-    transform: scale(1.2);
-  }
-  
-  .logo a {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #FFFAF6;
-    text-decoration: none;
-  }
-  
-  /* Enlaces de navegación */
-  .nav-links {
-    display: flex;
-    list-style: none;
-    padding-left: 0; /* Elimina el espacio adicional */
+/* Contenedor con clip-path */
+.navbar-container {
+  max-width: 1200px;
+  width: 95%;
+  position: relative;
+  clip-path: polygon(
+      0% 0%,
+      100% 0%,
+      100% 0%,
+      100% 60%,
+      95% 80%,
+      55% 80%,
+      53% 100%,
+      47% 100%,
+      45% 80%,
+      5% 80%,
+      0% 60%,
+      0% 0%
+  );
 }
-  
-  .nav-links.responsive {
-    display: block; /* Mostrar menú desplegado */
-    flex-direction: column;
-    background-color: #ffca99b6;
-    position: absolute;
-    top: 90px; /* Ajustar para evitar solapamiento con la barra */
-    right: 0;
-    width: 100%;
-    padding: 10px 0;
+
+/* Sección del menú */
+.menu {
+  background-color: #ffffff9a;
+  width: 100%;
+  height: 80px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+/* Contenedor de navegación */
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: relative;
+}
+
+/* Enlaces de navegación */
+.nav-links {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 0 20px;
+}
+
+/* Mitad izquierda del menú */
+.left-menu {
+  position: absolute;
+  left: 0;
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+  height: 100%;
+  align-items: center;
+  padding-right: 50px; /* Espacio para el logo */
+}
+
+/* Mitad derecha del menú */
+.right-menu {
+  position: absolute;
+  right: 0;
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+  height: 100%;
+  align-items: center;
+  padding-left: 50px; /* Espacio para el logo */
+}
+
+.left-menu li, .right-menu li {
+  display: inline-block;
+  margin: 0 15px 10px 0px;
+}
+
+/* Estilos para los enlaces */
+.nav-links a {
+  color: #726f6b;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 0 5px;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #474444;
+}
+
+/* Logo centrado */
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  clip-path: circle(30px at center);
+  background-color: #F72585;
+  z-index: 10;
+  transition: all 0.3s;
+}
+
+.logo:hover {
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+.logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #FFFAF6;
+  text-decoration: none;
+}
+
+/* Botón Hamburguesa */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.hamburger span {
+  background-color: #FFFAF6;
+  height: 3px;
+  width: 25px;
+  margin: 4px 0;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hamburger {
+      display: flex;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 20;
   }
   
-  .nav-links li {
-    text-align: center;
-    margin: 10px 0;
-    padding-inline: 5px;
-    
+  .left-menu, .right-menu {
+      position: fixed;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 20px;
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+      transition: all 0.5s ease;
   }
   
-  .nav-links a {
-    color: #726f6b;
-    text-decoration: none;
-    font-size: 1.2rem;
-    padding: 0 15px;
+  .left-menu.active, .right-menu.active {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
   
-  .nav-links a:hover {
-    color: #474444;
+  .left-menu {
+      top: 80px;
   }
   
-  /* Redes sociales */
-  .social-media a {
-    margin-left: 15px;
-    color: #726f6b;
-    text-decoration: none;
-    font-size: 1.8rem;
+  .right-menu {
+      top: calc(80px + 3 * 50px); /* Ajusta basado en el número de elementos en left-menu */
   }
   
-  .social-media a:hover {
-    color: #ddd;
+  .left-menu li, .right-menu li {
+      margin: 15px 0;
+      width: 100%;
+      text-align: center;
   }
+}

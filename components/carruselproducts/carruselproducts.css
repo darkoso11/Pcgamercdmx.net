@@ -1,213 +1,226 @@
- /* Card de productos */
- @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
- .swiper {
-    width: 1300px !important;
-    height: 100vh; 
-    padding: 0 20px; /* Espaciado lateral dentro del slider */
-    background-color: #080F19 !important;
+/* Card de productos */
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
+
+.swiper {
+  width: 1300px !important;
+  height: 100vh;
+  padding: 0 20px;
+  /* Espaciado lateral dentro del slider */
+  background-color: #080f19 !important;
 }
 
 .swiper-wrapper {
-    display: flex;
+  display: flex;
 }
 
 .swiper-backface-hidden .swiper-slide {
-    padding-top: 20px;
-    padding-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 50px;
 }
 
 .swiper-slide {
-    /* width: auto; */ /* Ajusta el ancho automáticamente */
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-    padding: 0 5px; /* Espaciado lateral entre slides */
+  /* width: auto; */
+  /* Ajusta el ancho automáticamente */
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5px;
+  /* Espaciado lateral entre slides */
 }
 
 .card-list {
-    display: block; /* Evita conflictos con Swiper */
+  display: block;
+  /* Evita conflictos con Swiper */
 }
 
 .card-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card-item {
-    position: relative;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    color: #72BF6F;
-    background-color: #3e37c9c7;
-    padding: 10px 10px;
-    margin: 30px 0px !important;
-    box-shadow:  0 10px 10px rgba(0, 0, 0, 0.1);
-    max-width: 100%; /* Las cards no ocuparán más del 80% del ancho del slider */
-    /* margin: 0 auto; */ /* Centra las cards dentro de cada slide */
-    min-height: 300px; 
-    clip-path: polygon(0% 0%, 88% 0%, 92% 6%, 100% 6%, 100% 100%, 10% 100%, 0% 94%, 0% 6%);
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Orbitron", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #72bf6f;
+  background-color: #3e37c9c7;
+  padding: 10px 10px;
+  margin: 30px 0px !important;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  /* Las cards no ocuparán más del 80% del ancho del slider */
+  /* margin: 0 auto; */
+  /* Centra las cards dentro de cada slide */
+  min-height: 300px;
+  clip-path: polygon(
+    0% 0%,
+    88% 0%,
+    92% 6%,
+    100% 6%,
+    100% 100%,
+    10% 100%,
+    0% 94%,
+    0% 6%
+  );
 }
-
 
 /* Seccion de las espesificaciones */
 .specs div {
-    display: flex;
-    /* align-items: center; */
-    gap: 5px;
+  display: flex;
+  /* align-items: center; */
+  gap: 5px;
 }
 
-.name, .price {
-    text-align: center;
-    width: 100%;
+.name,
+.price {
+  text-align: center;
+  width: 100%;
 }
 
 .price {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .specs {
-    width: 100%;
-    text-align: left;
+  width: 100%;
+  text-align: left;
 }
+
 .spec-content {
-    display: flex;
-    flex-direction: column;
-    margin-left: 5px; 
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+  width: 100%;
 }
 
 .spec-title {
-    font-weight: bold;
-    font-size: 18px;
-    color: #89BDF6;
-    
+  font-weight: bold;
+  font-size: 18px;
+  color: #89bdf6;
 }
 
 .spec-value {
-    font-size: 15px;
+  font-size: 15px;
 }
 
 /* Actualización para .peace */
 .peace {
-    display: flex;
-    align-items: flex-start !important; /* Cambiado de center a flex-start */
-    padding-bottom: 15px;
-    width: 100%;
-    justify-content: flex-start;
+  display: flex;
+  align-items: flex-start !important;
+  /* Cambiado de center a flex-start */
+  padding-bottom: 15px;
+  width: 100%;
+  justify-content: flex-start;
 }
 
 .bi {
-    font-size: 30px;
-    color: #89BDF6;
-    margin-top: 3px;
+  font-size: 30px;
+  color: #89bdf6;
+  margin-top: 3px;
 }
 
-
 .card-item img {
-    width: 100%; /* Asegura que la imagen ocupe todo el ancho de la card */
-    height: auto; /* Mantiene la proporción original de la imagen */
-    max-height: 500px; /* Limita la altura máxima (ajústalo según tu diseño) */
-    border-radius: 15px; /* Mantén las esquinas redondeadas */
-    object-fit: cover; /* Hace que la imagen se recorte para ajustarse al contenedor */
+  width: 100%;
+  /* Asegura que la imagen ocupe todo el ancho de la card */
+  height: auto;
+  /* Mantiene la proporción original de la imagen */
+  max-height: 500px;
+  /* Limita la altura máxima (ajústalo según tu diseño) */
+  border-radius: 15px;
+  /* Mantén las esquinas redondeadas */
+  object-fit: cover;
+  /* Hace que la imagen se recorte para ajustarse al contenedor */
 }
 
 .offer {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    background: red;
-    color: white;
-    padding: 5px;
-    font-size: 14px;
-    width: fit-content;
-    border-radius: 3px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: red;
+  color: white;
+  padding: 5px;
+  font-size: 14px;
+  width: fit-content;
+  border-radius: 3px;
 }
 
-
-.watts{
-    position: absolute;
-    top: 240px;
-    left: 10px;
-    background: #89BDF6;
-    color: white;
-    padding: 5px;
-    font-size: 14px;
-    width: fit-content;
-    border-radius: 3px;
+.watts {
+  position: absolute;
+  top: 240px;
+  left: 10px;
+  background: #89bdf6;
+  color: white;
+  padding: 5px;
+  font-size: 14px;
+  width: fit-content;
+  border-radius: 3px;
 }
 
 .certificate {
-    position: absolute;
-    top: 180px;
-    left: 10px;
-    width: 13%;
-    height: auto;
+  position: absolute;
+  top: 180px;
+  left: 10px;
+  width: 13%;
+  height: auto;
 }
 
 .nvidia {
-    position: absolute;
-    top: 65px;
-    right: 5px;
-    width: 22%;
+  position: absolute;
+  top: 65px;
+  right: 5px;
+  width: 22%;
 }
 
 .amd {
-    position: absolute;
-    top: 110px;
-    right: -13px;
-    width: 30%;
+  position: absolute;
+  top: 110px;
+  right: -13px;
+  width: 30%;
 }
 
 .procesadores {
-    position: absolute;
-    top: 100px;
-    right: 5px;
-    width: 22%;
+  position: absolute;
+  top: 100px;
+  right: 5px;
+  width: 22%;
 }
 
-
 .case {
-    position: absolute;
-    top: 140px;
-    right: 10px;
-    width: 15%;
+  position: absolute;
+  top: 140px;
+  right: 10px;
+  width: 15%;
 }
 
 .price {
-    font-size: 22px;
-    color:rgb(229, 255, 0);
+  font-size: 22px;
+  color: rgb(229, 255, 0);
 }
 
 .specs div img {
-    width: 20px;
+  width: 20px;
 }
-
-
 
 .swiper-button-prev,
 .swiper-button-next {
-    z-index: 10;
+  z-index: 10;
 }
 
 @media (max-width: 1307px) {
-    .swiper{
-        width: 100% !important;
-    }
+  .swiper {
+    width: 100% !important;
+  }
 }
 
 @media (max-width: 860px) {
+}
 
-  }
-
-  @media (max-width: 320px) {
-
-
-  }
+@media (max-width: 320px) {
+}
