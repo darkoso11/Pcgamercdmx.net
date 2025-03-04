@@ -1,6 +1,4 @@
-/* Navbar */
- /* Navbar principal */
- .navbar {
+.navbar {
   position: fixed;
   width: 100%;
   display: flex;
@@ -152,12 +150,54 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+  .navbar-container {
+    max-width: 900px;
+    
+    width: 95%;
+    position: relative;
+  }
+
+  .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: circle(20px at center);
+    background-color: #F72585;
+    z-index: 10;
+    transition: all 0.3s;
+  }
+  
+  .logo:hover {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  
+  .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FFFAF6;
+    text-decoration: none;
+  }
+
   .hamburger {
       display: flex;
       position: absolute;
       top: 20px;
       right: 20px;
       z-index: 20;
+      clip-path: polygon(
+        0 10%, 
+        20% 0, 
+        100% 0, 
+        100% 90%, 
+        80% 100%, 
+        0 100%
+        );
   }
   
   .left-menu, .right-menu {
