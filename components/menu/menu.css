@@ -115,7 +115,7 @@
   justify-content: center;
   align-items: center;
   clip-path: circle(30px at center);
-  background-color: #F72585;
+  background-color: #e63030;
   z-index: 10;
   transition: all 0.3s;
 }

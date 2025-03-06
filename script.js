@@ -1,14 +1,13 @@
 import { loadComponent } from './components/components.js';
 
 document.addEventListener('DOMContentLoaded', () => {
-  loadComponent(
-    'menu-container',
-    '../../components/menu/menu.html',
-    '../../components/menu/menu.css',
-    () => import('../../components/menu/menu.js')
-  );
+    loadComponent(
+        'menu-container',
+        '../../components/menu/menu.html',
+        '../../components/menu/menu.css',
+        () => import('../../components/menu/menu.js')
+    );
 
-    // Cargar el componente 'heroslide'
     loadComponent(
         'heroslide-container',
         './components/heroslide/heroslide.html',
@@ -45,6 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
       )
 
     });
+    
 
 export function readMore() {
     alert("Funcionalidad de 'Leer más' aún en desarrollo. ¡Gracias por visitar!");
