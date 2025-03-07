@@ -22,8 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 );
 
-
-
     loadComponent(
         'heroslide-container',
         './components/heroslide/heroslide.html',
