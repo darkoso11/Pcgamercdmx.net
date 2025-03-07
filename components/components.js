@@ -1,4 +1,3 @@
-// components.js
 export async function loadComponent(containerId, htmlPath, cssPath, initCallback) {
     try {
         // Cargar el HTML
@@ -20,15 +19,13 @@ export async function loadComponent(containerId, htmlPath, cssPath, initCallback
             container.innerHTML = htmlContent;
 
             // Ejecutar el callback de inicialización si existe
-            if (initCallback) {
+            if (typeof initCallback === 'function') {
                 const module = await initCallback();
-                if (module && module.initializeHeroSlide) {
+                if (module && typeof module.initializeHeroSlide === 'function') {
                     module.initializeHeroSlide();
                 }
             }
-        }/*  else {
-            console.error(container with id ${containerId} not found);
-        } */
+        }
     } catch (error) {
         console.error('Error loading component:', error);
     }
