@@ -1,6 +1,5 @@
 import { loadComponent } from './components/components.js';
 
-
 document.addEventListener('DOMContentLoaded', () => {
   
   loadComponent(
@@ -17,10 +16,9 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             console.warn('initializeMenu no existe en menu.js');
         }
-
         return module;
-    }
-);
+            }
+        );
 
     loadComponent(
         'heroslide-container',
@@ -58,6 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
       )
       
     });
+
 
 /* export function readMore() {
     alert("Funcionalidad de 'Leer más' aún en desarrollo. ¡Gracias por visitar!");
