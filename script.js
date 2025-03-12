@@ -1,61 +1,64 @@
 import { loadComponent } from './components/components.js';
 
 document.addEventListener('DOMContentLoaded', () => {
-  
-  loadComponent(
-    'menu-container',
-    '../../components/menu/menu.html',
-    '../../components/menu/menu.css',
-    async () => {
-        const module = await import('../../components/menu/menu.js');
-        console.log('menu.js cargado:', module);
-
-        if (module && module.initializeMenu) {
-            console.log('Ejecutando initializeMenu()');
-            module.initializeMenu();
+  [
+    {
+      component: 'menu',
+      reference: '../../',
+      isAsync: true
+    },
+    {
+      component: 'letrasCyberPunk',
+      reference: './',
+      isAsync: false
+    },
+    {
+      component: 'heroslide',
+      reference: './',
+      isAsync: false
+    },
+    {
+      component: 'carruselproducts',
+      reference: './',
+      isAsync: false
+    },
+    {
+      component: 'slidecategorias',
+      reference: './',
+      isAsync: false
+    },
+    {
+      component: 'brands',
+      reference: './',
+      isAsync: false
+    },
+    {
+      component: 'footer',
+      reference: '../../',
+      isAsync: false
+    }
+  ].forEach(({ component, reference, isAsync }) => {
+    loadComponent(
+      `${component}-container`,
+      `${reference}components/${component}/${component}.html`,
+      `${reference}components/${component}/${component}.css`,
+      isAsync ? async () => {
+        const module = await import(`${reference}components/${component}/${component}.js`);
+        console.log(`${component}.js cargado:`, module);
+        const capitalizedComponent = component.charAt(0).toUpperCase() + component.slice(1);
+        if (module && module['initialize' + capitalizedComponent]) {
+          console.log(`Ejecutando initialize${capitalizedComponent}()`);
+          module['initialize' + capitalizedComponent]();
         } else {
-            console.warn('initializeMenu no existe en menu.js');
+          console.warn(`initialize${capitalizedComponent} no existe en ${component}.js`);
         }
         return module;
-            }
-        );
-
-    loadComponent(
-        'heroslide-container',
-        './components/heroslide/heroslide.html',
-        './components/heroslide/heroslide.css',
-        () => import('./components/heroslide/heroslide.js')
+      } : 
+      () => import(`${reference}components/${component}/${component}.js`)
     );
+  });
 
-    loadComponent(
-        'carruselproducts-container',
-        './components/carruselproducts/carruselproducts.html',
-        './components/carruselproducts/carruselproducts.css',
-        () => import('./components/carruselproducts/carruselproducts.js')
-      );
-
-      loadComponent(
-        'slidecategorias-container',
-        './components/slidcategorias/slidecategorias.html',
-        './components/slidcategorias/slidecategorias.css',
-        () => import('./components/slidcategorias/slidecategorias.js')
-      );
-
-      loadComponent(
-        'brands-container',
-        './components/marcas/slidebrands.html',
-        './components/marcas/slidebrands.css',
-        () => import('./components/marcas/slidebrands.js')
-      );
-
-      loadComponent(
-        'footer-container',
-        '../../components/footer/footer.html',
-        '../../components/footer/footer.css',
-        () => import('../../components/footer/footer.js')
-      )
-      
-    });
+});
 
 
 /* export function readMore() {

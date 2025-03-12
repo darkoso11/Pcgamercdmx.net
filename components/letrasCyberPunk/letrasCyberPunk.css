@@ -1,0 +1,21 @@
+#letrasCyberPunk-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+#letrasCyberPunk {
+    width: 100%;
+    padding: 2rem;
+    text-align: left;
+    color: aliceblue;
+    text-shadow: 4px 4px 4px #7209B7, -4px -4px 4px #09B772;
+    font-size: 3rem;
+}
+
+@media (max-width: 768px) {
+    #letrasCyberPunk {
+        font-size: 1.5rem;
+    }
+}

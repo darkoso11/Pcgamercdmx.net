@@ -1,4 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+html,
+body {
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
 body {
     background-color: #020A15;
     color: #0ff;
@@ -7,8 +19,10 @@ body {
     margin: 0;
     padding: 0;
 }
+
 main {
     padding-top: 80px;
+    min-height: calc(100vh - 292px);
 }
 
 .cyberpunk-title {
@@ -19,8 +33,13 @@ main {
 }
 
 @keyframes glitch {
-    0% { text-shadow: 2px 2px 5px #0ff, -2px -2px 5px #ff00ff; }
-    100% { text-shadow: -2px -2px 5px #0ff, 2px 2px 5px #ff00ff; }
+    0% {
+        text-shadow: 2px 2px 5px #0ff, -2px -2px 5px #ff00ff;
+    }
+
+    100% {
+        text-shadow: -2px -2px 5px #0ff, 2px 2px 5px #ff00ff;
+    }
 }
 
 .service-container {

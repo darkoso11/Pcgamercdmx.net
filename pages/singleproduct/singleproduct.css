@@ -1,77 +1,89 @@
-main {
-    padding: 2rem;
-    padding-top: 80px;
+html,
+body {
+  overflow-x: hidden;
+}
 
-  }
-  
-  .producto {
-    display: flex;
-    flex-wrap: wrap;
-    background: #fff;
-    margin-bottom: 2rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-  }
-  
-  .imagen-producto img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-  }
-  
-  .detalles-producto {
-    margin-left: 20px;
-    flex: 1;
-  }
-  
-  .detalles-producto h2 {
-    font-size: 2rem;
-    color: #333;
-  }
-  
-  .detalles-producto .descripcion {
-    margin: 10px 0;
-    font-size: 1.1rem;
-  }
-  
-  .especificaciones {
-    list-style: disc;
-    padding-left: 20px;
-    margin-top: 10px;
-  }
-  
-  .precio {
-    font-size: 1.5rem;
-    color: #d9534f;
-    margin-top: 10px;
-  }
-  
-  .contacto {
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  .contacto h3 {
-    margin-bottom: 10px;
-  }
-  
-  .contacto ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .contacto ul li {
-    margin: 5px 0;
-  }
-  
-  /* Botones de contacto */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+main {
+  padding: 2rem;
+  padding-top: 80px;
+
+}
+
+.producto {
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.imagen-producto img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.detalles-producto {
+  margin-left: 20px;
+  flex: 1;
+}
+
+.detalles-producto h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.detalles-producto .descripcion {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.especificaciones {
+  list-style: disc;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.precio {
+  font-size: 1.5rem;
+  color: #d9534f;
+  margin-top: 10px;
+}
+
+.contacto {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.contacto h3 {
+  margin-bottom: 10px;
+}
+
+.contacto ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contacto ul li {
+  margin: 5px 0;
+}
+
+/* Botones de contacto */
 .botones-contacto {
   display: flex;
   gap: 15px;
@@ -90,30 +102,36 @@ main {
 }
 
 .btn-contacto.correo {
-  background-color: #007bff; /* Azul */
+  background-color: #007bff;
+  /* Azul */
   color: #fff;
 }
 
 .btn-contacto.whatsapp {
-  background-color: #25d366; /* Verde WhatsApp */
+  background-color: #25d366;
+  /* Verde WhatsApp */
   color: #fff;
 }
 
 .btn-contacto.telefono {
-  background-color: #d9534f; /* Rojo */
+  background-color: #d9534f;
+  /* Rojo */
   color: #fff;
 }
 
 /* Efectos al pasar el mouse */
 .btn-contacto:hover {
   transform: scale(1.05);
-  background-color: #0056b3; /* Azul más oscuro */
+  background-color: #0056b3;
+  /* Azul más oscuro */
 }
 
 .btn-contacto.whatsapp:hover {
-  background-color: #1da851; /* Verde más oscuro */
+  background-color: #1da851;
+  /* Verde más oscuro */
 }
 
 .btn-contacto.telefono:hover {
-  background-color: #c9302c; /* Rojo más oscuro */
+  background-color: #c9302c;
+  /* Rojo más oscuro */
 }
