@@ -12,25 +12,25 @@ export function initializeMenu() {
             success = true;
             clearInterval(intervalId);
             const hamburger = document.getElementById("hamburger");
-            const leftMenu = document.querySelector(".left-menu");
-            const rightMenu = document.querySelector(".right-menu");
-            if (!hamburger || !leftMenu || !rightMenu) {
+            const menuMovil = document.querySelector(".menu-movil");
+            console.log('se encontro el menu movil', menuMovil)
+            if (!hamburger || !menuMovil) {
                 console.error("No se encontraron los elementos del menú");
+                console.error('No se consiguio', menuMovil)
                 return;
             }
             // Alternar clases para mostrar u ocultar el menú
             hamburger.addEventListener("click", function () {
                 console.log('Hamburguesa clickeada');
-                leftMenu.classList.toggle("active");
-                rightMenu.classList.toggle("active");
+                menuMovil.classList.toggle("active");
             });
             console.log('Menú inicializado. 1/2');
 
             // Cerrar menú cuando se hace clic en un enlace
-            document.querySelectorAll(".left-menu a, .right-menu a").forEach(link => {
+            document.querySelectorAll(".menu-movil").forEach(link => {
                 link.addEventListener("click", function () {
-                    leftMenu.classList.remove("active");
-                    rightMenu.classList.remove("active");
+                    menuMovil.classList.remove("active");
+
                 });
             });
             console.log('Menú inicializado. 2/2');
