@@ -52,8 +52,6 @@
   display: block;
   margin: 0 auto;
   z-index: 1;
-  
-  /* filter: blur(0.5rem); */
 }
 
 .navbar #menu {
@@ -93,7 +91,6 @@
   align-items: center;
   padding-right: 50px;
   z-index: 3;
-  /* Espacio para el logo */
 }
 
 .navbar .right-menu {
@@ -106,7 +103,6 @@
   align-items: center;
   padding-left: 50px;
   z-index: 3;
-  /* Espacio para el logo */
 }
 
 .navbar .left-menu li,
