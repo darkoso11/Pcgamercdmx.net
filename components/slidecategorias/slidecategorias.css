@@ -1,21 +1,4 @@
-.carousel-container {
-    max-width: 1200px;
-    height: 400px !important;
-    margin: 0 auto;
-    overflow: hidden;
-    position: relative;
-    height: 50%;
-    margin-top: 80px;
-}
-h3 {
-    color: #F5F6FE;
-    padding-top: 15px;
-}
-.carousel {
-    display: flex;
-    transition: transform 0.5s ease;
-}
-.card {
+.swiper-slide {
     min-width: 250px;
     margin: 10px;
     text-align: center;
@@ -25,7 +8,7 @@ h3 {
     cursor: pointer;
     clip-path: polygon(0% 0%, 75% 0%, 85% 10%, 100% 10%, 100% 100%, 15% 100%, 0% 85%, 0% 15%);
 }
-.card img {
+.imgcategoria img {
     max-width: 200px;
     height: 200px;
     object-fit: cover;
