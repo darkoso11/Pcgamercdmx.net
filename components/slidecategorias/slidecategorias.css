@@ -1,4 +1,4 @@
-.swiper-slide {
+.swiper-slide2 {
     min-width: 250px;
     margin: 10px;
     text-align: center;
@@ -8,7 +8,7 @@
     cursor: pointer;
     clip-path: polygon(0% 0%, 75% 0%, 85% 10%, 100% 10%, 100% 100%, 15% 100%, 0% 85%, 0% 15%);
 }
-.imgcategoria img {
+/* .imgcategoria img {
     max-width: 200px;
     height: 200px;
     object-fit: cover;
@@ -33,4 +33,4 @@
 }
 .pagination-dot.active {
     background-color: #333;
-}
+} */
