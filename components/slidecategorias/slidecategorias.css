@@ -8,12 +8,12 @@
     cursor: pointer;
     clip-path: polygon(0% 0%, 75% 0%, 85% 10%, 100% 10%, 100% 100%, 15% 100%, 0% 85%, 0% 15%);
 }
-/* .imgcategoria img {
-    max-width: 200px;
-    height: 200px;
-    object-fit: cover;
+.imgcategoria img {
+    height: 350px;
+    overflow: auto;
 }
-.navigation {
+
+/* .navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
