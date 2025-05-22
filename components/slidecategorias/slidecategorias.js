@@ -22,7 +22,7 @@ export function initializeHeroSlide() {
       },
             {
         name: "PC Gamer para Jugar Genshin Impact",
-        image: "../../Img/pcgamercdmx.net/overwatch-2-beta-nasil-indirilir150146_0.jpg",
+        image: "../../Img/pcgamercdmx.net/81YqH88N8vL._SL1500_.jpg",
         link: "#",
       },
             {
@@ -37,7 +37,7 @@ export function initializeHeroSlide() {
       },
       {
         name: "Pc para Inteligencia Artificial",
-        image: "../../Img/pcgamercdmx.net/MHBJKJVCGVHBJNK.png",
+        image: "../../Img/pcgamercdmx.net/inteligencia-artificial-con-chip-ai-innovacion-tecnologica-futura.jpg",
         link: "#",
       },
       {
@@ -47,7 +47,7 @@ export function initializeHeroSlide() {
       },
       {
         name: "Computadora para Edición de Fotografía",
-        image: "../../Img/pcgamercdmx.net/MHBJKJVCGVHBJNK.png",
+        image: "../../Img/pcgamercdmx.net/bailey-mahon-2b6K4uy0Hbc-unsplash-scaled.jpg",
         link: "#",
       },
       {
@@ -62,7 +62,7 @@ export function initializeHeroSlide() {
       },
       {
         name: "Computadoras para Programación",
-        image: "../../Img/pcgamercdmx.net/MHBJKJVCGVHBJNK.png",
+        image: "../../Img/pcgamercdmx.net/computer-screen-technology-web-internet-signage-670370-pxhere.com.jpg",
         link: "#",
       },
     ];
@@ -75,7 +75,8 @@ export function initializeHeroSlide() {
       card.href = category.link;
 
       card.innerHTML = `
-        <img src="${category.image}" alt="${category.name}">
+        <img src="${category.image}" 
+        alt="${category.name}">
         <p>${category.name}</p>
       `;
 
