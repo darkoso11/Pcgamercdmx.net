@@ -1,6 +1,11 @@
  .slider-wrapper {
      position: relative;
-     padding: 20px;
+     padding-top: 45px;
+
+ }
+
+ .titulocate{
+    padding-top: 45px;
  }
 
  .slider-container {
@@ -10,6 +15,7 @@
  .slider {
      display: flex;
      text-align: center;
+     align-content: center !important;
      gap: 16px;
      overflow-x: auto;
      scroll-behavior: smooth;
